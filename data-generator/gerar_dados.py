@@ -8,5 +8,5 @@ def gerar_dados(quantidade, arquivo='dados.txt', valor_maximo=1000000):
 
 # Exemplo de uso:
 if __name__ == '__main__':
-    tamanho = 10000  # pode alterar conforme necessidade
+    tamanho = 50000  # pode alterar conforme necessidade
     gerar_dados(tamanho)
