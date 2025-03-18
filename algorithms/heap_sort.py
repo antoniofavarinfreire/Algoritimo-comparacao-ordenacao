@@ -4,7 +4,7 @@ class HeapSort(SortingStrategy):
     def sort(self, data): 
         comparisons, swaps = self.heap_sort(data)
         print(f"HeapSort: Comparisons = {comparisons}, Swaps = {swaps}")
-        return data
+        return data, comparisons, swaps
     
     def heapify(self, data, n, i, counters):
         largest = i  

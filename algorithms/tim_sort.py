@@ -6,7 +6,7 @@ class TimSort(SortingStrategy):
     def sort(self, data):
         comparisons, swaps = self.tim_sort(data)
         print(f"TimSort: Comparisons = {comparisons}, Swaps = {swaps}")
-        return data
+        return data, comparisons, swaps
 
     def tim_sort(self, data):
         n = len(data)

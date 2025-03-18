@@ -18,4 +18,4 @@ class SelectionSort(SortingStrategy):
                 swaps += 1  # Counting swaps
 
         print(f"SelectionSort: Comparisons = {comparisons}, Swaps = {swaps}")
-        return data
+        return data, comparisons, swaps

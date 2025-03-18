@@ -4,7 +4,7 @@ class RadixSort(SortingStrategy):
     def sort(self, data):
         comparisons, swaps = self.radix_sort(data)
         print(f"RadixSort: Comparisons = {comparisons}, Swaps = {swaps}")
-        return data
+        return data, comparisons, swaps
 
     def counting_sort_radix(self, data, exp, counters):
         n = len(data)

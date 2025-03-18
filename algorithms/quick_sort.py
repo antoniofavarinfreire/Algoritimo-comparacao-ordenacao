@@ -5,7 +5,7 @@ class QuickSort(SortingStrategy):
     def sort(self, data):
         comparisons, swaps = self.quick_sort(data, 0, len(data) - 1, {"comparisons": 0, "swaps": 0})
         print(f"QuickSort: Comparisons = {comparisons}, Swaps = {swaps}")
-        return data
+        return data, comparisons, swaps
 
     def quick_sort(self, data, low, high, counters):
         if low < high:

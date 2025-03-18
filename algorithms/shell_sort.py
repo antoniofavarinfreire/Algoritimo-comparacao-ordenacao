@@ -4,7 +4,7 @@ class ShellSort(SortingStrategy):
     def sort(self, data):
         comparisons, swaps = self.shell_sort(data)
         print(f"ShellSort: Comparisons = {comparisons}, Swaps = {swaps}")
-        return data
+        return data, comparisons, swaps
 
     def shell_sort(self, data):
         n = len(data)

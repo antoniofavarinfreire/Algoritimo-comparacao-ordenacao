@@ -30,4 +30,4 @@ class CountingSort(SortingStrategy):
             swaps += 1
 
         print(f"CountingSort: Comparisons = {comparisons}, Swaps = {swaps}")
-        return output
+        return output, comparisons, swaps

@@ -4,7 +4,7 @@ class MergeSort(SortingStrategy):
     def sort(self, data):
         comparisons, swaps = self.merge_sort(data, 0, len(data) - 1, {"comparisons": 0, "swaps": 0})
         print(f"MergeSort: Comparisons = {comparisons}, Swaps = {swaps}")
-        return data
+        return data, comparisons, swaps
     
     def merge(self, data, l, m, r, counters):
         n1 = m - l + 1

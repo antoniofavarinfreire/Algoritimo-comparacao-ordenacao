@@ -5,7 +5,7 @@ class InsertionSort(SortingStrategy):
     def sort(self, data):
         n = len(data) 
         if n <= 1: 
-            return data
+            return data, 0, 0
 
         comparisons = 0
         swaps = 0
@@ -27,4 +27,4 @@ class InsertionSort(SortingStrategy):
             swaps += 1  
 
         print(f"InsertionSort: Comparisons = {comparisons}, Swaps = {swaps}")
-        return data
+        return data, comparisons, swaps
